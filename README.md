@@ -138,7 +138,7 @@ flowchart TD
 
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone https://github.com/adigayung/MAP_CODE_RIG.git
 cd MAP_CODE_RIG
 
 # (Optional) Create a virtual environment
