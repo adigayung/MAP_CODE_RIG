@@ -312,22 +312,6 @@ The **Python Code Extractor** (`PythonCodeExtractor`) uses the standard library 
 
 ## Development
 
-### Running Tests
-
-Tests are located in the `tests/` directory and use `pytest`:
-
-```bash
-# Install test dependencies
-pip install pytest
-
-# Run all tests
-python -m pytest tests/ -v
-
-# Run specific test classes
-python -m pytest tests/ -k "TestDeterminism"
-python -m pytest tests/ -k "TestValidation"
-```
-
 ### Project Structure
 
 ```
@@ -336,24 +320,24 @@ MAP_CODE_RIG/
 ├── README.md                     # This file
 ├── FINAL_RIG_BLUEPRINT.md        # Architecture blueprint (source of truth)
 ├── rig/
-│   ├── __init__.py
-│   ├── cli.py                    # CLI argument parsing
-│   ├── config.py                 # Configuration constants
-│   ├── discovery.py              # Repository discovery
-│   ├── evidence.py               # Evidence collection
-│   ├── extractor.py              # Extractor plugin framework
-│   ├── graph.py                  # Graph assembly
-│   ├── identity.py               # Deterministic identity generation
-│   ├── models.py                 # Core data models
-│   ├── pipeline.py               # Pipeline orchestrator
-│   ├── serializer.py             # Canonical JSON serializer
-│   ├── validator.py              # RIG validation
-│   ├── code_extractor.py         # Python source-code mapping
-│   └── extractors/
-│       ├── __init__.py
-│       ├── cmake_extractor.py    # CMake build system extractor
-│       └── npm_extractor.py      # npm/JS build system extractor
-└── tests/                        # Test suite
+    ├── __init__.py
+    ├── cli.py                    # CLI argument parsing
+    ├── config.py                 # Configuration constants
+    ├── discovery.py              # Repository discovery
+    ├── evidence.py               # Evidence collection
+    ├── extractor.py              # Extractor plugin framework
+    ├── graph.py                  # Graph assembly
+    ├── identity.py               # Deterministic identity generation
+    ├── models.py                 # Core data models
+    ├── pipeline.py               # Pipeline orchestrator
+    ├── serializer.py             # Canonical JSON serializer
+    ├── validator.py              # RIG validation
+    ├── code_extractor.py         # Python source-code mapping
+    └── extractors/
+        ├── __init__.py
+        ├── cmake_extractor.py    # CMake build system extractor
+        └── npm_extractor.py      # npm/JS build system extractor
+
 ```
 
 ### Extending with New Plugins
